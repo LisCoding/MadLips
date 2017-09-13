@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2AD318641F6863C6008C38D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD318631F6863C6008C38D9 /* AppDelegate.swift */; };
-		2AD318661F6863C6008C38D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD318651F6863C6008C38D9 /* ViewController.swift */; };
 		2AD318691F6863C6008C38D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD318671F6863C6008C38D9 /* Main.storyboard */; };
 		2AD3186B1F6863C6008C38D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AD3186A1F6863C6008C38D9 /* Assets.xcassets */; };
 		2AD3186E1F6863C6008C38D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD3186C1F6863C6008C38D9 /* LaunchScreen.storyboard */; };
 		2AD318791F6863C6008C38D9 /* MadLibsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD318781F6863C6008C38D9 /* MadLibsTests.swift */; };
 		2AD318841F6863C7008C38D9 /* MadLibsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD318831F6863C7008C38D9 /* MadLibsUITests.swift */; };
+		2AD318921F686BB6008C38D9 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD318911F686BB6008C38D9 /* AddViewController.swift */; };
+		2AD318961F687286008C38D9 /* protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD318951F687286008C38D9 /* protocol.swift */; };
+		2AD318981F68751C008C38D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD318971F68751C008C38D9 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		2AD318601F6863C6008C38D9 /* MadLibs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadLibs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD318631F6863C6008C38D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2AD318651F6863C6008C38D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2AD318681F6863C6008C38D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2AD3186A1F6863C6008C38D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AD3186D1F6863C6008C38D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		2AD3187F1F6863C7008C38D9 /* MadLibsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MadLibsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AD318831F6863C7008C38D9 /* MadLibsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadLibsUITests.swift; sourceTree = "<group>"; };
 		2AD318851F6863C7008C38D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AD318911F686BB6008C38D9 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		2AD318951F687286008C38D9 /* protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = protocol.swift; sourceTree = "<group>"; };
+		2AD318971F68751C008C38D9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		2AD318571F6863C6008C38D9 = {
 			isa = PBXGroup;
 			children = (
+				2AD318951F687286008C38D9 /* protocol.swift */,
 				2AD318621F6863C6008C38D9 /* MadLibs */,
 				2AD318771F6863C6008C38D9 /* MadLibsTests */,
 				2AD318821F6863C7008C38D9 /* MadLibsUITests */,
@@ -97,9 +102,10 @@
 		2AD318621F6863C6008C38D9 /* MadLibs */ = {
 			isa = PBXGroup;
 			children = (
+				2AD318971F68751C008C38D9 /* ViewController.swift */,
 				2AD318631F6863C6008C38D9 /* AppDelegate.swift */,
-				2AD318651F6863C6008C38D9 /* ViewController.swift */,
 				2AD318671F6863C6008C38D9 /* Main.storyboard */,
+				2AD318911F686BB6008C38D9 /* AddViewController.swift */,
 				2AD3186A1F6863C6008C38D9 /* Assets.xcassets */,
 				2AD3186C1F6863C6008C38D9 /* LaunchScreen.storyboard */,
 				2AD3186F1F6863C6008C38D9 /* Info.plist */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AD318661F6863C6008C38D9 /* ViewController.swift in Sources */,
+				2AD318981F68751C008C38D9 /* ViewController.swift in Sources */,
 				2AD318641F6863C6008C38D9 /* AppDelegate.swift in Sources */,
+				2AD318921F686BB6008C38D9 /* AddViewController.swift in Sources */,
+				2AD318961F687286008C38D9 /* protocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +438,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.MadLibs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = "";
 			};
 			name = Release;
 		};
@@ -507,6 +515,7 @@
 				2AD3188A1F6863C7008C38D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2AD3188B1F6863C7008C38D9 /* Build configuration list for PBXNativeTarget "MadLibsTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +524,7 @@
 				2AD3188D1F6863C7008C38D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2AD3188E1F6863C7008C38D9 /* Build configuration list for PBXNativeTarget "MadLibsUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +533,7 @@
 				2AD318901F6863C7008C38D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
